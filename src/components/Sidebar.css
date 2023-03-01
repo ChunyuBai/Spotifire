@@ -10,3 +10,16 @@
   object-fit: contain;
   padding: 20px;
 }
+
+.sidebar_title{
+  font-size: 15px;
+  padding: 5px;
+  margin-left: 20px;
+  color: white;
+}
+
+.sidebar > hr {
+  border: 1px solid #282828;
+  width: 90%;
+  margin:10px auto;
+}
