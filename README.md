@@ -6,7 +6,7 @@ Spotifire is for learning purpose and contributed by [@ChunyuBai](https://github
 
 ## Final Product
 ### Homepage
-!["Screenshot of Home Page"](https://github.com/ChunyuBai/Spotifire/blob/main/src/docs/Authantication.png)
+!["Screenshot of Home Page"](https://github.com/ChunyuBai/Spotifire/blob/main/src/docs/Login.pngg)
 
 ### Authentication
 !["Screenshot of authentication"](https://github.com/ChunyuBai/Spotifire/blob/main/src/docs/Authantication.png)
