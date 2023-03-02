@@ -15,11 +15,11 @@ function Footer() {
   return (
     <div className="footer">
       <div className="footerLeft">
-        <img src="" className="album"/>
+        <img src="https://i.scdn.co/image/ab67616d0000b2738630e6875c1e035c543d9b53" className="album"/>
         <div className="songInfo">
-          <h4>Yeah!</h4>
+          <h4>真夜中のドア / STAY WITH ME</h4>
           <br/>
-          <p>User</p>
+          <p>Rainych</p>
         </div>
       </div>
 
