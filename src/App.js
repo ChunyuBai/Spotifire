@@ -36,6 +36,13 @@ function App() {
           playlists: playlists
         })
       })
+
+      spotify.getPlaylist('2osx7KHwUGxYrYFA9ahPwn').then(res => {
+        dispatch({
+          type:'SET_TopInfo',
+          topInfo: res
+        })
+      })
     }
   }, []);
 

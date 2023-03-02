@@ -26,6 +26,11 @@ const reducer = (state, action) => {
         ...state,
         playlists: action.playlists
       }
+    case 'SET_TopInfo' :
+      return {
+        ...state,
+        topInfo: action.topInfo
+      }
     default:
       return state;
   }

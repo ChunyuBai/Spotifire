@@ -5,3 +5,28 @@
   background-color: rgb(68, 54, 144);
   background:linear-gradient(transparent,rgb(13, 38, 101))
 }
+
+.body_info {
+  display: flex;
+  align-items: flex-end;
+  padding: 10px;
+}
+
+.body_infoText {
+  flex: 1;
+}
+
+.body_infoText > p {
+  font-size: 15px;
+}
+
+.body_infoText > h2 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.body_info > img {
+  height: 20vw;
+  margin: 0 20px;
+  box-shadow: 0 4px 60px black;
+}
