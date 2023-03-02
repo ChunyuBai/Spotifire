@@ -1,70 +1,60 @@
-# Getting Started with Create React App
+# Spotifire
+CinePlanet is a website that offers users the ability to browse a diverse selection of high-rated and classic movies and purchase movie tickets. The website features a range of movie details, including overviews, ratings, and trailers, to help users make informed decisions about which movie to see. Additionally, CinePlanet provides information on cinemas in Toronto, as well as showtimes for each movie, giving users the flexibility to choose the most convenient time and location.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+CinePlanet is contributed by [@ChunyuBai](https://github.com/ChunyuBai) and [@ruilinqi](https://github.com/ruilinqi).
+## Features
+- Browse movie listings and flip movie cards to view movies' titles, ratings
+- View movies by categories
+- Search for specific movies by typing movies' names in search bar
+- View ratings, overviews, and trailers on the modal after clicking on "More Details"
+- Select available cinema location, date, and time, and then buy tickets
+- Make payment for tickets using Stripe
+- View purchased tickets after payment
+- View multiple purchased tickets in the user's order list
 
-## Available Scripts
+## Final Product
+### Homepage
+Movie Slider on Home Page
+!["Screenshot of Movie Slider on Home Page"](https://github.com/ChunyuBai/cineplanet/blob/main/docs/cineplanet_movie_sliders.PNG)
 
-In the project directory, you can run:
+Movie List on Home Page
+!["Screenshot of Movie List on Home Page"](https://github.com/ChunyuBai/cineplanet/blob/main/docs/cineplanet_movie_list.PNG)
 
-### `npm start`
+### Single Movie Card
+Single Movie Card Before flip
+!["Screenshot of Single Movie Card Before flip"](https://github.com/ChunyuBai/cineplanet/blob/main/docs/cineplanet_movie_card_before_flip.PNG)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Single Movie Card After flip
+!["Screenshot of Single Movie Card After flip"](https://github.com/ChunyuBai/cineplanet/blob/main/docs/cineplanet_movie_card_after_flip.PNG)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Pop-up Module
+Upon clicking the "More Details" button on each individual movie card, multiple popup windows will sequentially appear, allowing the user to view movie's details, select a cinema location and time, make a payment, and confirm their transaction with a successful window.
 
-### `npm test`
+Movie Details Window
+!["Screenshot of Movie Dedtails window"](https://github.com/ChunyuBai/cineplanet/blob/main/docs/cineplanet_movie_details_window.PNG)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Select Cinema Location, Date and Time Window
+!["Screenshot of Select Cinema Location, Date and Time Window"](https://github.com/ChunyuBai/cineplanet/blob/main/docs/cineplanet_buy_tickets.PNG)
 
-### `npm run build`
+Payment Window
+!["Screenshot of Payment window"](https://github.com/ChunyuBai/cineplanet/blob/main/docs/cineplanet_payment.PNG)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Successful transaction Window
+!["Screenshot of Successful transaction Window"](https://github.com/ChunyuBai/cineplanet/blob/main/docs/cineplanet_purchased_tickets.PNG)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Purchased Tickets View
+Users can view their purchased tickets by clicking on their user avatar after completing their purchase.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Purchased Tickets View
+!["Screenshot of Tickets View"](https://github.com/ChunyuBai/cineplanet/blob/main/docs/cineplanet_user's_tickets_view.PNG)
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Getting Started
+1. Clone the repository
+2. Run `npm i` in both \server and \client folders to install dependencies
+3. In the \server create .env based on our .env.example
+4. On \server run `npm run db:reset` to reset the database with our pre-made assets
+5. Go to `http://localhost:8080/cinema/fetch` to fetch cinema locations's data
+6. Run:
+- On \server run `npm run dev`
+- On \client run `npm start`
+7. Enjoy the app in the `http://localhost:3000/`
