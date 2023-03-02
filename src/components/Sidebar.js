@@ -7,7 +7,6 @@ import SearchIcon from '@mui/icons-material/Search';
 import { useStateValue } from "../stateProvider/StateProvider";
 function Sidebar() {
   const [{playlists},dispatch] =useStateValue()
-  console.log(playlists)
   return (
     <div className="sidebar">
       <img className="sidebarLogo" src="https://getheavy.com/wp-content/uploads/2019/12/spotify2019-830x350.jpg"/>
